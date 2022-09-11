@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sirichai</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="nav-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+
+      <div class="logo">
+        <h1>แปะโลโก้ท็อป</h1>
+      </div>
+      <ul id="js-menu">
+        <div class="dropdown">
+          <li>
+            <a onclick="myFunction()" class="firstpage">
+              หน้าหลัก
+              <i class="fa-solid fa-caret-down fa-fw"></i>
+            </a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"><i class="fa fa-percent fa-fw"></i> โปรโมชั่น </a>
+              <a href="#">
+                <i class="fa fa-light fa-user fa-fw"></i> ประวัติทันตแพทย์</a
+              >
+              <span class="empty">&nbsp;</span>
+              <a href="#"
+                ><i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+                ติดต่อเรา</a
+              >
+            </div>
+          </li>
+
+          <li>
+            <a onclick="servicePage()" class="servicepage">
+              บริการ
+              <i class="fa-solid fa-caret-down fa-fw"></i>
+            </a>
+            <div id="serviceDropdown" class="dropdown-content">
+              <a href="#"
+                ><i class="fa-solid fa-user-doctor fa-fw"></i> ตรวจสุขภาพฟัน
+              </a>
+              <a href="#"> <i class="fa-solid fa-tooth fa-fw"></i> ทำฟัน</a>
+              <a href="#">
+                <i class="fa-solid fa-teeth-open fa-fw"></i> จัดฟัน</a
+              >
+              <a href="#"
+                ><i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+                ปรึกษาทันตแพทย์</a
+              >
+            </div>
+          </li>
+
+          <li>
+            <a onclick="promotionPage()" class="promotionpage">
+              โปรโมชั่น
+              <i class="fa-solid fa-caret-down fa-fw"></i>
+            </a>
+            <div id="promotionDropdown" class="dropdown-content">
+              <a href="#"
+                ><i class="fa fa-percent fa-fw"></i>
+                โปรโมชั่นประจำเดือน
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-tooth fa-fw"></i>
+                โปรโมชั่นทำฟันครั้งแรก</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              ติดต่อคลินิก <i class="fa-solid fa-house-chimney-medical"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              รวมบทความเรื่องรอยยิ้ม <i class="fa-regular fa-face-smile"></i
+            ></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="test">
+      <div class="container">
+        <div class="container1">
+          <div>ช่องทางติดต่อ</div>
+          <span class="empty">&nbsp;</span>
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <a class="fb-page" href="www.facebook.com"> เพจท็อป</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-line"></i>
+            <a class="line-page" href="www.line.com"> Line ท็อป</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <a class="vide-page" href="#"> Video ท็อป</a>
+          </div>
+          <div>
+            <i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+            <p>02-777-7777 (ท็อป)</p>
+            <p>081-234-5678 (ท็อป)</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container1">
+          <div>
+            <div class="history">
+              <p>ประวัติทันตแพทย์</p>
+              <div>
+                <img
+                  style="
+                    margin: auto;
+                    cursor: zoom-in;
+                    background-color: hsl(0, 0%, 90%);
+                    transition: background-color 300ms;
+                  "
+                  src="https://scontent.fbkk4-3.fna.fbcdn.net/v/t31.18172-8/24831528_10204159660068827_7463507092505434710_o.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=0debeb&amp;_nc_eui2=AeFZ8s8RA-mYL5aROLtstcRiSjGmste8-elKMaay17z56fae49BzVLi_6yDex8DS6zbZopUyAvcGNWsN3ZlLAmI2&amp;_nc_ohc=2yRi1ZarN1gAX-7dByZ&amp;tn=SNYUwS7eJn_5jiVm&amp;_nc_ht=scontent.fbkk4-3.fna&amp;oh=00_AT-taXXxySkr43YCzjAMPL7iGUv0gGvtNt7mYRTi-BH4zQ&amp;oe=6343DF93"
+                  width="300"
+                  height="480"
+                />
+              </div>
+              <div>test test</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
