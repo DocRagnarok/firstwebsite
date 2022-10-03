@@ -1,7 +1,7 @@
 body {
     font-family: 'Prompt', sans-serif;
     height: 100vh;
-    background: #e5c8a8;
+    background: rgb(111, 208, 219);  
     margin: 0;
     padding: 0;
 }
@@ -25,8 +25,13 @@ nav {
 
 
 .logo {
-    margin: 40px 0 40px 0;
-    /* border: 1px solid red */
+    margin: 20px 0 20px 0;
+        color: rgb(111, 208, 219);
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 0.65;
+        font-family: 'Lobster', cursive;
+    
 }
 
 ul {
@@ -111,6 +116,12 @@ ul li:first-child{
 	padding: 0;
 	line-height: 0;
 }
+.emptyspace{
+  display: block;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	line-height: 0;
+}
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
@@ -119,7 +130,7 @@ ul li:first-child{
     flex-direction: column;
     margin: 20px 0 0 45px;
     font-size: large;
-    width: 100%;
+    width: 95%;
     background-color: #fff;
     border-radius: 20px;
     text-align: center;
@@ -147,11 +158,102 @@ flex-direction: row;
 gap: 20px
 }
 .container1 .history {
-    display: table-cell;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
-.container1 .history image {
-    float: left;
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev {
+
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next {
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.location {
+  display: flex;
+  color: #bbb;
+  flex-direction: row;
+  margin-top: 20px;
+
+  background-color: rgb(39, 38, 38);
+  width: auto;
+  height: auto;
 }
+.boxoflocation{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+}
+
+
+
+
 @media screen and (min-width: 800px) {
 
     nav { height: 80px;
@@ -169,7 +271,7 @@ gap: 20px
         width: 80%;
         flex-direction: row
         ;
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     ul li {
@@ -189,20 +291,13 @@ gap: 20px
         flex-direction: column;
         margin: 20px 0 0 45px;
         font-size: large;
-        width: 100%;
+        width: 95%;
         background-color: #fff;
         border-radius: 20px;
         text-align: center;
       
     }
-    .container1 div{
-        
-  position: relative;
-        color: #424242;
-        padding: 10px 0 10px 0;
-        display: block;
-      
-    }
+ 
  .container1 div a{
     text-decoration: none;
     color: #424242;
@@ -216,6 +311,7 @@ gap: 20px
     flex-direction: row;
     gap: 20px
  }
+
 
 }
 
